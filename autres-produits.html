@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nous contacter</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.10)),
+        url("medailleuse.png") center center / cover no-repeat,
+        radial-gradient(circle at top, #8c5fa3 0%, #3d214d 45%, #140818 100%);
+      color: #f2d57a;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 430px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(212, 175, 55, 0.85), rgba(255, 223, 120, 0.95));
+      color: #2b1800;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.22);
+      text-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.35),
+         1px -1px 0 rgba(0, 0, 0, 0.35),
+        -1px  1px 0 rgba(0, 0, 0, 0.35),
+         1px  1px 0 rgba(0, 0, 0, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .back-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 26px rgba(212, 175, 55, 0.34);
+      background: linear-gradient(90deg, rgba(224, 186, 64, 0.95), rgba(255, 231, 150, 1));
+    }
+
+    .header,
+    .card {
+      background: rgba(255, 245, 250, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.30);
+      border-radius: 24px;
+      padding: 22px 18px;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      box-shadow:
+        0 0 30px rgba(255, 255, 255, 0.10),
+        inset 0 0 20px rgba(255, 255, 255, 0.08);
+      margin-bottom: 16px;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .page-logo {
+      display: block;
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      border: 2px solid rgba(212, 175, 55, 0.7);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      color: #d4af37;
+      font-family: 'Cinzel Decorative', serif;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+         0 2px 6px rgba(0, 0, 0, 0.45);
+    }
+
+    .header p,
+    .text {
+      color: #f2d57a;
+      line-height: 1.6;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
+    .contact-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 14px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(212, 175, 55, 0.85), rgba(255, 223, 120, 0.95));
+      color: #2b1800;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.22);
+      text-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.25),
+         1px -1px 0 rgba(0, 0, 0, 0.25),
+        -1px  1px 0 rgba(0, 0, 0, 0.25),
+         1px  1px 0 rgba(0, 0, 0, 0.25);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 26px rgba(212, 175, 55, 0.34);
+      background: linear-gradient(90deg, rgba(224, 186, 64, 0.95), rgba(255, 231, 150, 1));
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1.7rem;
+      }
+
+      .header,
+      .card {
+        padding: 16px;
+      }
+
+      .page-logo {
+        width: 95px;
+        height: 95px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-btn" href="menu.html">RETOUR</a>
+
+    <div class="header">
+      <img src="logo.jpg" alt="Logo" class="page-logo" />
+      <h1>Nous contacter</h1>
+      <p>Seules les fleurs de CBD et les résines de CBD sont présentées ici.
+  Pour toute autre demande, veuillez nous contacter directement via Potato ou Telegram.
+    </div>
+
+    <div class="card">
+      <p class="text">
+        Nous restons disponibles pour répondre à vos questions.<br><br>
+        Merci de nous contacter via notre canal POTATO OU Telegram.
+      </p>
+
+      <a class="contact-btn" href="reseaux.html">ACCÉDER À NOS CONTACTS</a>
+    </div>
+  </div>
+</body>
+</html>

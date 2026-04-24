@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIENVENUE CHEZ LVE GANG CBD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.10)),
+        url("medailleuse.png") center center / cover no-repeat,
+        radial-gradient(circle at top, #8c5fa3 0%, #3d214d 45%, #140818 100%);
+      color: #f2d57a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 430px;
+      background: rgba(255, 245, 250, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      border-radius: 24px;
+      padding: 28px 22px;
+      box-shadow:
+        0 0 30px rgba(255, 255, 255, 0.14),
+        inset 0 0 20px rgba(255, 255, 255, 0.10);
+      text-align: center;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+
+    .logo-box {
+      width: 190px;
+      height: 190px;
+      margin: 0 auto 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.18);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+      padding: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      color: #d4af37;
+      margin-bottom: 10px;
+      font-family: 'Cinzel Decorative', serif;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+         0 2px 6px rgba(0, 0, 0, 0.45);
+    }
+
+    .subtitle {
+      color: #d4af37;
+      font-weight: bold;
+      margin-bottom: 18px;
+      font-size: 1rem;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
+    .desc {
+      color: #f2d57a;
+      line-height: 1.55;
+      font-size: 0.98rem;
+      margin-bottom: 20px;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
+    .separator {
+      width: 70px;
+      height: 3px;
+      margin: 18px auto;
+      background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.95), transparent);
+      border-radius: 99px;
+    }
+
+    .service-box {
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 16px;
+      padding: 18px;
+      text-align: left;
+      margin-bottom: 22px;
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .service-box h3 {
+      color: #d4af37;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
+    .service-box ul {
+      padding-left: 18px;
+      margin-bottom: 14px;
+      color: #f2d57a;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
+    .service-box li {
+      margin-bottom: 6px;
+    }
+
+    .footer-text {
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 18px;
+      color: #f2d57a;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
+    .direction {
+      color: #d4af37;
+      margin-bottom: 18px;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
+    .enter-btn {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(212, 175, 55, 0.85), rgba(255, 223, 120, 0.95));
+      color: #2b1800;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.22);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      text-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.35),
+         1px -1px 0 rgba(0, 0, 0, 0.35),
+        -1px  1px 0 rgba(0, 0, 0, 0.35),
+         1px  1px 0 rgba(0, 0, 0, 0.35);
+    }
+
+    .enter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 26px rgba(212, 175, 55, 0.34);
+      background: linear-gradient(90deg, rgba(224, 186, 64, 0.95), rgba(255, 231, 150, 1));
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .container {
+        padding: 22px 16px;
+      }
+
+      .logo-box {
+        width: 170px;
+        height: 170px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-box">
+      <img src="logo.jpg" alt="Logo LVE GANG CBD">
+    </div>
+
+    <h1>BIENVENUE CHEZ LVE GANG CBD</h1>
+    <p class="subtitle">La qualité, la quantité, le meilleur prix</p>
+
+    <p class="desc">
+      Depuis 2023 nous proposons une large gamme de produits en provenance des 4 coins du globe.
+    </p>
+
+    <div class="separator"></div>
+
+    <div class="service-box">
+      <h3>Service pour le 31 📍</h3>
+      <ul>
+        <li>Livraison</li>
+        <li>Meet-up</li>
+      </ul>
+
+      <h3>Service International 🌍</h3>
+      <ul>
+        <li>Envoi postal</li>
+      </ul>
+    </div>
+
+    <p class="footer-text">
+      Solide, structuré, efficace. LVE GANG CBD garantit un service premium, une expérience inoubliable.
+    </p>
+
+    <p class="direction">La direction ✍️</p>
+
+    <button type="button" class="enter-btn" onclick="goToSite()">ENTRER</button>
+  </div>
+
+  <script>
+    function goToSite() {
+      window.location.href = "reseaux.html";
+    }
+  </script>
+</body>
+</html>
